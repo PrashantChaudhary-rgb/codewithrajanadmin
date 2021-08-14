@@ -41,6 +41,9 @@ browse_btn.addEventListener('click',()=>
 {
     input_file.click();
 })
+input_file.addEventListener("change",()=>{
+    uploadfile();
+});
 
 const uploadfile=()=>
 {

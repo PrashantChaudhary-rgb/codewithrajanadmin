@@ -1,4 +1,6 @@
 console.log('this is working');
+let alert=document.getElementById('alert');
+alert.style.display='none';
 let browse_btn=document.getElementById("input-btn");
 let input_file=document.getElementById("input-file");
 let drop_zone=document.querySelector('.drop-zone');
@@ -51,5 +53,13 @@ fetch(uploadURL,
     body:data
 }).then(
     response => response.json() 
-  ).then(function(data){ console.log(  data.file )  })
+  ).then(function(data){ showalert()});
+}
+
+function showalert()
+{
+    alert.style.display='block';
+    setTimeout(() => {
+        alert.style.display='none';
+    },2000);
 }

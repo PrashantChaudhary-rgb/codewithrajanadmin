@@ -4,20 +4,10 @@
     padding: 0;
 
 }
-html,body{
-    border: 2px solid red;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    background-color: #b3e6e0cc;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-   
-}
+
 .drop-zone
 {
-    width: 500px;
+    width: auto;
     min-height: 200px;
     border: 2px dashed #3276bea3;
     border-radius: 26px;
@@ -28,12 +18,25 @@ html,body{
     align-items: center;
 
 }
+.center
+{
+    text-align: center;
+    margin: 12px;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: #aae2e7;
+}
 .container
 {
-    background-color: white;
+
+    background-color: #b6e1a766;
     
     border-radius: 26px;
     box-shadow: 0px 18px 22px #000000ba;
+    display: flex;
+    width: 512px;
 }
 #image-box {
     width: 100px;
@@ -47,7 +50,7 @@ html,body{
 }
 .dragged
 {
-    background-color: rgba(100, 207, 226, 0.473);
+    background-color: #aae2e7;
 }
 #input-file
 {
@@ -57,4 +60,7 @@ html,body{
 {
     cursor: pointer;
     color: #3276bea3;;
+}
+.drop-zone{
+    
 }
